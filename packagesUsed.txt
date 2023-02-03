@@ -1,0 +1,5 @@
+    Package Name        usage informations
+---react-router-dom   ---> routing 
+---framer-motion      ---> animation 
+--- eslint            --->syntax validation,
+---Recharts           ---> chats
