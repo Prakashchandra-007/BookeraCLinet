@@ -1,8 +1,17 @@
 import { Button } from "@chakra-ui/react";
 import React from "react";
-
-function CustomButton({ buttonName, buttonTitle ,bgColor ,color ,hoverColor}) {
-  return <Button pl="30px" hoverColor={hoverColor} color={color} bgColor={bgColor} name={buttonName}>{buttonTitle}</Button>;
+import "./customButton.css";
+import colours from "../../../contants/colours";
+function CustomButton({ children, width, height, callback }) {
+  return (
+    <button
+      style={{ backgroundColor: colours.PRIMARY, width: width, height: height }}
+      onClick={callback}
+      className="customButton"
+    >
+      {children}
+    </button>
+  );
 }
 
 export default CustomButton;

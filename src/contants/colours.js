@@ -1,5 +1,5 @@
 const colours = {
-  PRIMARY: "",
+  PRIMARY: "#0a5aa5",
   SECONDARY: "",
   SUCCESS: "",
   DANGER: "",
