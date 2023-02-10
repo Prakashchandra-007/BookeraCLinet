@@ -37,9 +37,73 @@
   display: "flex";
 }
 .homeContainer .courseSection {
-  background-color: rgb(3, 35, 65);
+  background-color: rgb(1,27,51);
   height: 100vh;
   width: "100%";
+}
+
+.courseSection_left{
+  width: 50%;
+  height: "100%";
+  background-color: "red";
+  padding-left: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.opnclsImg {
+  width: 5%;
+  height: 5%;
+  padding-bottom: 0%;
+}
+
+.rightsidecourseimg{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; */
+}
+
+.courseSection_right {
+  width: 50%;
+  height: 100%;
+  background-color: "green";
+}
+
+.courseSection_right{
+  width: 50%;
+  height: "100%";
+  background-color: "red";
+  padding-left: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 300px;
+}
+
+.opnclsImg {
+  width: 5%;
+  height: 5%;
+  padding-bottom: 0%;
+}
+
+.rightsidecourseimg{
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; */
+}
+
+.courseSection_left {
+  width: 50%;
+  height: 100%;
+  background-color: "green";
 }
 
 .homeContainer .feedBackSection {
