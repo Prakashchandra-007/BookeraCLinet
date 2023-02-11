@@ -106,50 +106,7 @@ const Home = () => {
           />
         </div>
         {/* downsection of course section */}
-        {/* <div className="courseSection_left">
-          <img
-            src={rightside}
-            alt="rightsideCourseSection"
-            className="rightsidecourseimg"
-          />
-        </div> */}
-
-        {/* <div className="courseSection_left">
-          <ul
-            style={{
-              color: "rgb(126,128,249)",
-              marginTop: 30,
-              paddingLeft: 20,
-              paddingBottom: 20,
-            }}
-          >
-            <li>2x FASTER LEARNING</li>
-          </ul>
-          <MedsizeHeading styles={{ color: " white" }}>
-            2x Faster Learning
-          </MedsizeHeading>
-          <SubHeading
-            styles={{
-              color: "black",
-              paddingleft: "50%",
-              marginTop: 30,
-              marginBottom: 30,
-            }}
-          >
-            Reading is faster than watching: The average tutorial is spoken at
-            150 words per minute. You can read at 250. That’s why our courses
-            are laid out as rich text and an interactive experience so you learn
-            more, learn faster, and learn exactly what you need.
-          </SubHeading>
-          <img src={opncls} alt="</>" className="opnclsImg" />
-          <SmallHeading styles={{ color: "white" }}>
-            Assessments: Measure Your Skill Score
-          </SmallHeading>
-          <img src={opncls} alt="</>" className="opnclsImg" />
-          <SmallHeading styles={{ color: "white" }}>
-            Personalized Paths
-          </SmallHeading>
-        </div> */}
+      
       </div>
       <div className="courseSection">
         <div className="courseSection_left">

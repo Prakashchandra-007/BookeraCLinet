@@ -1,7 +1,7 @@
 .homeContainer {
   background-color: rgb(10, 35, 57);
   min-height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
 }
 .heroSection {
@@ -42,6 +42,7 @@
   height: 100vh;
   width: "100%";
   display: flex;
+  flex-wrap: wrap;
 }
 
 .courseSection_left {
@@ -61,13 +62,6 @@
   height: 20%;
 }
 
-.rightsidecourseimg {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%; */
-}
 
 .courseSection_right {
   width: 50%;
@@ -93,13 +87,6 @@
   padding-bottom: 0%;
 }
 
-.rightsidecourseimg {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%; */
-}
 
 .courseSection_left {
   width: 50%;
