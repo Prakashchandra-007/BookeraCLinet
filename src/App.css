@@ -1,5 +1,7 @@
 .App {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -11,4 +13,14 @@
   font-family: "heading-Chocolada"; /*Can be any text*/
   src: local("Chocolada"),
     url("./asserts/fonts/Chocolada.ttf") format("truetype");
+}
+@font-face {
+  font-family: "heading-Aloevera"; /*Can be any text*/
+  src: local("Aloevera"),
+    url("./asserts/fonts/Aloevera-OVoWO.ttf") format("truetype");
+}
+@font-face {
+  font-family: "heading-MouvereBold"; /*Can be any text*/
+  src: local("MouvereBold"),
+    url("./asserts/fonts/MouvereBold-VG9EB.ttf") format("truetype");
 }

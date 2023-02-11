@@ -2,6 +2,7 @@
   background-color: rgb(10, 35, 57);
   min-height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 .heroSection {
   background-color: rgb(255, 255, 255);
@@ -157,4 +158,7 @@
 }
 .circleImg {
   position: absolute;
+}
+.parterlogoImg {
+  width: 60%;
 }

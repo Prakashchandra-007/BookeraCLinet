@@ -1,0 +1,35 @@
+.header {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(70, 64, 64);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em 1em;
+}
+.menuItem {
+  color: #c7c1c1;
+  font-size: 1em;
+  font-weight: bold;
+}
+.menuItem:hover {
+  color: #f1e8e8;
+}
+.logo {
+  color: #ffffff;
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "MouvereBold";
+}
+.menuBar {
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+  justify-content: space-around;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .menuBar {
+    display: none;
+  }
+}

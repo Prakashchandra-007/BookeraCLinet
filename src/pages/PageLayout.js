@@ -1,38 +1,35 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
+import CustomButton from "../components/atoms/CustomButton";
+import Footer from "../components/molecules/Footer";
+import Header from "../components/molecules/header";
 // import { Header } from "../components/molecules";
 const PageLayout = () => {
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          backgroundColor: "red",
-          width: "100%",
-        }}
-        className="container"
-      >
-        <h1>loGO</h1>
-        <nav
-          style={{
-            display: "flex",
-            flexDirection: "row",
-          }}
-        >
-          <h3>
+      <Header>
+        <h1 className="logo">
+          B<span style={{ color: "#6972f0" }}>OO</span>KERA_
+        </h1>
+        <nav className="menuBar">
+          <h3 className="menuItem">
             <Link to="/">Home</Link>
           </h3>
-          <h3>
+          <h3 className="menuItem">
             <Link to="/profile">Profile</Link>
           </h3>
-          <h3>
+          <h3 className="menuItem">
             <Link to="/login">Login</Link>
           </h3>
+          <CustomButton width={150} height={40}>
+            <h3>
+              <Link to="/profile"> Join for free</Link>
+            </h3>
+          </CustomButton>
         </nav>
-      </div>
+      </Header>
       <Outlet />
+      <Footer />
     </>
   );
 };

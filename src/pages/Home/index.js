@@ -8,7 +8,6 @@ import SubHeading from "../../components/atoms/SubHeading";
 import SmallHeading from "../../components/atoms/SmallHeading";
 import MedsizeHeading from "../../components/atoms/MedsizeHeading";
 import opncls from "./coursesectionImg/opncls.jpg";
-import dotedImg from "../../asserts/images/dotedImg.png";
 import rightside from "./courseSecRight/rightside.jpg";
 import codeImg from "../../asserts/images/svgs/codeImg.svg";
 import circleImg from "../../asserts/images/svgs/circle.svg";
@@ -22,20 +21,22 @@ const Home = () => {
       <div className="heroSection">
         <div className="heroSectionleft">
           <Heading styles={{ color: "black", minWidth: 700 }}>
-            Educative Accelerates Developer Productivity
+            Bookera Accelerates The Knowledge
           </Heading>
-          <SubHeading styles={{ marginTop: 30, marginBottom: 30 }}>
-            Explore over 500 courses on: Programming | Cloud Computing | Data
-            Science | Machine Learning
+          <SubHeading
+            styles={{ marginTop: 30, marginBottom: 30, maxWidth: "600px" }}
+          >
+            Explore over 500 courses on: Finance | Banking | Business Case
+            Studies | Business Development
           </SubHeading>
 
           <CustomButton width={150} height={40}>
             Start Free Trail
           </CustomButton>
           <SmallHeading>
-            Join 1.7 Million developers working in companies like
+            Join 1.7 Million students & working professionals in companies like
           </SmallHeading>
-          <img src={img} alt="logoImg" className="logoImg" />
+          <img src={img} alt="parterlogoImg" className="parterlogoImg" />
         </div>
         <div className="heroSectionRight">
           <img src={sideImg} alt="HeroImg" className="heroImg" />
@@ -57,7 +58,7 @@ const Home = () => {
             <li>INTERACTIVE</li>
           </ul>
           <MedsizeHeading styles={{ color: " white" }}>
-            Hands-on coding environments
+            LIBRARY ON THE GO...
           </MedsizeHeading>
           <SubHeading
             styles={{
@@ -167,7 +168,7 @@ const Home = () => {
               paddingBottom: 20,
             }}
           >
-            <li>2x FASTER LEARNING</li>
+            <li>2X FASTER LEARNING</li>
           </ul>
           <MedsizeHeading styles={{ color: " white" }}>
             2x FASTER LEARNING
