@@ -14,6 +14,7 @@ import circleImg from "../../asserts/images/svgs/circle.svg";
 import doted from "../../asserts/images/svgs/dotedImg.svg";
 import sideImg from "../../asserts/images/svgs/heroSecImg.svg";
 import { Flex } from "@chakra-ui/react";
+import CourseCard from "../../components/molecules/CourseCard";
 
 const Home = () => {
   return (
@@ -205,6 +206,27 @@ const Home = () => {
           Start Free Trail
         </CustomButton>
         <img src={doted} alt="dotedImg" className="dotedImg" />
+      </div>
+      <div className="courseViewSection">
+        <SubHeading
+          styles={{
+            color: "white",
+            paddingleft: "50%",
+            marginTop: 30,
+            marginBottom: 30,
+          }}
+        >
+          Stop Scrolling. Start Coding.Supercharge Your Development Career
+        </SubHeading>
+        <div className="courseContainer">
+          <CourseCard />
+          <CourseCard />
+          <CourseCard />
+        </div>
+
+        <CustomButton width={150} height={40}>
+          Start Free Trail
+        </CustomButton>
       </div>
       <div className="feedBackSection">
         <img src={circleImg} alt="circleImg" className="circleImg" />

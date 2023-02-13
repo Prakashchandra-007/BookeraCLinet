@@ -12,25 +12,27 @@ function Footer() {
         <div className="footerRow">
           <ul>
             <li>
-              <NormalText style={{ color: "white" }}>PRODUCTS</NormalText>
+              <NormalText style={{ color: "white", fontWeight: "600" }}>
+                PRODUCTS
+              </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Educative Learning
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Educative Onboarding
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white", fontWeight: "100"  }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Educative Skill Assessments
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white", fontWeight: "100"  }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Educative Projects
               </NormalText>
             </li>
@@ -42,15 +44,19 @@ function Footer() {
               <NormalText style={{ color: "white" }}>PRICING</NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>For Enterprise</NormalText>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
+                For Enterprise
+              </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 For Individuals
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>Free Trial</NormalText>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
+                Free Trial
+              </NormalText>
             </li>
           </ul>
         </div>
@@ -60,15 +66,17 @@ function Footer() {
               <NormalText style={{ color: "white" }}>LEGAL</NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>Privacy Policy</NormalText>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
+                Privacy Policy
+              </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Terms of Service
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Business Terms of Service
               </NormalText>
             </li>
@@ -77,15 +85,15 @@ function Footer() {
         <div className="footerRow">
           <ul>
             <li>
-              <NormalText style={{ color: "white"}}>
-                ABOUT US
+              <NormalText style={{ color: "white" }}>ABOUT US</NormalText>
+            </li>
+            <li>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
+                Our Team
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>Our Team</NormalText>
-            </li>
-            <li>
-              <NormalText style={{ color: "white", fontWeight: "100"  }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Careers
                 <CustomButton
                   style={{
@@ -95,20 +103,26 @@ function Footer() {
                     color: "#000000",
                   }}
                 >
-                  <NormalText style={{ fontSize: "0.8em", fontWeight:'bold' }}>Hiring</NormalText>
+                  <NormalText style={{ fontSize: "0.8em", fontWeight: "bold" }}>
+                    Hiring
+                  </NormalText>
                 </CustomButton>
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
                 Frequently Asked Questions
               </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>Contact Us</NormalText>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
+                Contact Us
+              </NormalText>
             </li>
             <li>
-              <NormalText style={{ color: "white" , fontWeight: "100" }}>Press</NormalText>
+              <NormalText style={{ color: "white", fontWeight: "100" }}>
+                Press
+              </NormalText>
             </li>
           </ul>
         </div>

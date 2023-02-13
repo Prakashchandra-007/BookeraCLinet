@@ -59,6 +59,20 @@
   justify-content: center;
   min-width: 300px;
 }
+.courseViewSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+}
+.courseContainer {
+  display: flex;
+
+  justify-content: space-between;
+  height: auto;
+}
 
 .opnclsImg {
   width: 10%;
