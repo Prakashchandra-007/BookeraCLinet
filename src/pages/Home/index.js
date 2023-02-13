@@ -21,11 +21,9 @@ const Home = () => {
       <div className="heroSection">
         <div
           className="heroSectionleft"
-          // style={{ minWidth: "200", maxHeight: "200" }}
+          style={{ minWidth: "200", maxHeight: "200" }}
         >
-          <Heading
-            styles={{ color: "black", minWidth: "200", maxHeight: "200" }}
-          >
+          <Heading styles={{ color: "black" }}>
             Bookera Accelerates The Knowledge
           </Heading>
           <SubHeading
@@ -56,10 +54,7 @@ const Home = () => {
       {/* COURSE SECTION */}
 
       <div className="courseSection">
-        <div
-          className="courseSection_left"
-          style={{ minWidth: "200", maxHeight: "200" }}
-        >
+        <div className="courseSection_left">
           <ul
             style={{
               color: "rgb(126,128,249)",
@@ -111,32 +106,42 @@ const Home = () => {
           </Flex>
         </div>
 
-        <div className="courseSection_right" style={{minWidth: "200" , maxHeight:"200" }}>
+        <div
+          className="courseSection_right"
+          style={{ minWidth: "200", maxHeight: "200" }}
+        >
           <img
             src={rightside}
             alt="rightsideCourseSection"
             className="rightsidecourseimg"
-            style={{minWidth: "200" , maxHeight:"200" }}
+            style={{ minWidth: "200", maxHeight: "200" }}
           />
         </div>
         {/* downsection of course section */}
       </div>
-      <div className="courseSection" style={{minWidth: "200" , maxHeight:"200" }}>
-        <div className="courseSection_left" style={{minWidth: "200" , maxHeight:"200" }}>
+      <div className="courseSection">
+        <div
+          className="courseSection_left"
+          style={{ minWidth: "200", maxHeight: "200" }}
+        >
           <img
             src={rightside}
             alt="rightsideCourseSection"
             className="rightsidecourseimg"
           />
         </div>
-        <div className="courseSection_right" style={{minWidth: "200" , maxHeight:"200" }}>
+        <div
+          className="courseSection_right"
+          style={{ minWidth: "200", maxHeight: "200" }}
+        >
           <ul
             style={{
               color: "rgb(126,128,249)",
               marginTop: 30,
               paddingLeft: 20,
               paddingBottom: 20,
-              minWidth: "200" , maxHeight:"200"
+              minWidth: "200",
+              maxHeight: "200",
             }}
           >
             <li>2X FASTER LEARNING</li>
@@ -150,7 +155,8 @@ const Home = () => {
               paddingleft: "50%",
               marginTop: 30,
               marginBottom: 30,
-              minWidth: "100" , maxHeight:"100"
+              minWidth: "100",
+              maxHeight: "100",
             }}
           >
             Reading is faster than watching: The average tutorial is spoken at
@@ -166,7 +172,7 @@ const Home = () => {
                 alt="</>"
                 className="opnclsImg"
               />
-              <SmallHeading styles={{ color: "white"}}>
+              <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
