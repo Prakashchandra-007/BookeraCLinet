@@ -15,6 +15,9 @@ import doted from "../../asserts/images/svgs/dotedImg.svg";
 import sideImg from "../../asserts/images/svgs/heroSecImg.svg";
 import { Flex } from "@chakra-ui/react";
 import CourseCard from "../../components/molecules/CourseCard";
+import card1Img from "../../asserts/images/element/card1Img.jpg";
+import card2Img from "../../asserts/images/element/card2Img.jpg";
+import card3Img from "../../asserts/images/element/card3Img.jpg";
 
 const Home = () => {
   return (
@@ -219,13 +222,62 @@ const Home = () => {
           Stop Scrolling. Start Coding.Supercharge Your Development Career
         </SubHeading>
         <div className="courseContainer">
-          <CourseCard />
-          <CourseCard />
-          <CourseCard />
+          <CourseCard style={{ color: "white" }} image={card1Img}>
+            <SmallHeading>Educative</SmallHeading>
+            <SubHeading>
+              Grokking Coding Interview Patterns in Python
+            </SubHeading>
+            <CustomButton
+              style={{
+                padding: "0.5em",
+                marginTop: "1.5em",
+                paddingLeft: "0.5em",
+                marginLeft: "12em",
+                backgroundColor: "white",
+                color: "black",
+              }}
+            >
+              Preview ->
+            </CustomButton>
+          </CourseCard>
+          <CourseCard style={{ color: "white" }} image={card2Img}>
+            <SmallHeading>Educative</SmallHeading>
+            <SubHeading>
+              Grokking Modern System Design Interview for Engineers & Managers
+            </SubHeading>
+            <CustomButton
+              style={{
+                padding: "0.5em",
+                marginTop: "1.5em",
+                paddingLeft: "0.5em",
+                marginLeft: "12em",
+                backgroundColor: "white",
+                color: "black",
+              }}
+            >
+              Preview ->
+            </CustomButton>
+          </CourseCard>
+          <CourseCard style={{ color: "white" }} image={card3Img}>
+            <SmallHeading>Educative</SmallHeading>
+            <SubHeading >Grokking the Machine Learning Interview</SubHeading>
+            <CustomButton
+              style={{
+                padding: "0.5em",
+                marginTop: "1.5em",
+                paddingLeft: "0.5em",
+                marginLeft: "12em",
+                backgroundColor: "white",
+                color: "black",
+              }}
+            >
+              Preview ->
+            </CustomButton>
+          </CourseCard>
         </div>
 
-        <CustomButton width={150} height={40}>
-          Start Free Trail
+        <CustomButton width={150} height={60}>
+          Start Your Free Trail
         </CustomButton>
       </div>
       <div className="feedBackSection">
