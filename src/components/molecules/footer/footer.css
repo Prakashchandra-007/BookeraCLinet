@@ -5,19 +5,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 3em 4em;
+  padding: 5em 5em;
 }
 .footContainer {
   width: 80%;
-  height: 30vh;
+  max-width: 80%;
+  max-height: 35vh;
   border-width: 1px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .footerRow {
   padding-top: 5%;
   display: flex;
+  flex-wrap: wrap;
+  min-width: 100;
+  max-height: 500;
   justify-content: space-around;
   flex-direction:row;
 }
