@@ -3,8 +3,21 @@
   height: 400px;
   min-width: 200px;
   background-color: rgb(38, 37, 46);
-  border-radius: 6px;
+  border-radius: 0.3em;
   color: rgb(38, 37, 46);
   margin: 1em 2em;
+  overflow: hidden;
 }
-
+.titleBlock {
+  height: 40%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+.ctaBlock {
+  height: 20%;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

@@ -1,14 +1,33 @@
 import React from "react";
+import CustomButton from "../../atoms/CustomButton";
+import SubHeading from "../../atoms/SubHeading";
 import "./courseCard.css";
-function CourseCard({image,style,children,children2,children3}) {
-
+function CourseCard({ image, style, children, children2, children3 }) {
   return (
     <div className="courseCard">
-      
-      <img src={image} alt="course1img" className="course1img" />
-      <h1 style={style}>{children}</h1>
-      {/* <p style={style}>{children2}</p> */}
-      {/* <h1 style={style}>Groking Coding Interview Patterns in Python</h1> */}
+      <div style={{ height: "40%" }}>
+        <img
+          src={image}
+          style={{ height: "100%" }}
+          alt="course1img"
+          className="course1img"
+        />
+      </div>
+      <div className="titleBlock" style={{ height: "40%" }}>
+        {children}
+      </div>
+      <div className="ctaBlock">
+        <CustomButton
+          style={{
+            color: "#ffffff",
+            borderWidth: "0.1em",
+            borderColor: "#ffffff",
+            backgroundColor: "#2220",
+          }}
+        >
+          Preview
+        </CustomButton>
+      </div>
     </div>
   );
 }

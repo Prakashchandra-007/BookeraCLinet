@@ -223,56 +223,22 @@ const Home = () => {
         </SubHeading>
         <div className="courseContainer">
           <CourseCard style={{ color: "white" }} image={card1Img}>
-            <SmallHeading>Educative</SmallHeading>
-            <SubHeading>
+            <SmallHeading styles={{ color: "white" }}>Educative</SmallHeading>
+            <SubHeading styles={{ color: "white", textAlign: "left" }}>
               Grokking Coding Interview Patterns in Python
             </SubHeading>
-            <CustomButton
-              style={{
-                padding: "0.5em",
-                marginTop: "1.5em",
-                paddingLeft: "0.5em",
-                marginLeft: "12em",
-                backgroundColor: "white",
-                color: "black",
-              }}
-            >
-              Preview ->
-            </CustomButton>
           </CourseCard>
           <CourseCard style={{ color: "white" }} image={card2Img}>
-            <SmallHeading>Educative</SmallHeading>
-            <SubHeading>
+            <SmallHeading styles={{ color: "white" }}>Educative</SmallHeading>
+            <SubHeading styles={{ color: "white", textAlign: "left" }}>
               Grokking Modern System Design Interview for Engineers & Managers
             </SubHeading>
-            <CustomButton
-              style={{
-                padding: "0.5em",
-                marginTop: "1.5em",
-                paddingLeft: "0.5em",
-                marginLeft: "12em",
-                backgroundColor: "white",
-                color: "black",
-              }}
-            >
-              Preview ->
-            </CustomButton>
           </CourseCard>
-          <CourseCard style={{ color: "white" }} image={card3Img}>
-            <SmallHeading>Educative</SmallHeading>
-            <SubHeading >Grokking the Machine Learning Interview</SubHeading>
-            <CustomButton
-              style={{
-                padding: "0.5em",
-                marginTop: "1.5em",
-                paddingLeft: "0.5em",
-                marginLeft: "12em",
-                backgroundColor: "white",
-                color: "black",
-              }}
-            >
-              Preview ->
-            </CustomButton>
+          <CourseCard image={card3Img}>
+            <SmallHeading styles={{ color: "white" }}>Educative</SmallHeading>
+            <SubHeading styles={{ color: "white", textAlign: "left" }}>
+              Grokking the Machine Learning Interview
+            </SubHeading>
           </CourseCard>
         </div>
 

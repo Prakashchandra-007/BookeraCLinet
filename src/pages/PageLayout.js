@@ -19,9 +19,15 @@ const PageLayout = () => {
             <Link to="/profile">Profile</Link>
           </h3>
           <h3 className="menuItem">
+            <Link to="/allcourses">All Courses</Link>
+          </h3>
+          <h3 className="menuItem">
             <Link to="/login">Login</Link>
           </h3>
-          <CustomButton width={150} height={40}>
+          <CustomButton
+            style={{ paddingLeft: "0.5em", paddingRight: "0.5em" }}
+            // height={40}
+          >
             <h3>
               <Link to="/profile"> Join for free</Link>
             </h3>
