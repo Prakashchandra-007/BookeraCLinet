@@ -97,7 +97,7 @@ function Footer() {
                 Careers
                 <CustomButton
                   style={{
-                    padding: "0.2em",
+                    padding: "0.1em",
                     marginLeft: "0.3em",
                     backgroundColor: "yellow",
                     color: "#000000",

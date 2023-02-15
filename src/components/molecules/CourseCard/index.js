@@ -2,8 +2,8 @@ import React from "react";
 import CustomButton from "../../atoms/CustomButton";
 import SubHeading from "../../atoms/SubHeading";
 import "./courseCard.css";
-import { ArrowRight, BookOpen } from 'react-feather';
-function CourseCard({ image, style, children, children2, children3 }) {
+import { ArrowRight } from "react-feather";
+function CourseCard({ image, style, children }) {
   return (
     <div className="courseCard">
       <div style={{ height: "40%" }}>
@@ -18,10 +18,9 @@ function CourseCard({ image, style, children, children2, children3 }) {
         {children}
       </div>
       <div className="ctaBlock">
-        
         <CustomButton
-        icon={<BookOpen/>}
-        iconPosition={'right'}
+          icon={<ArrowRight />}
+          iconPosition={"right"}
           style={{
             color: "#ffffff",
             borderWidth: "0.1em",
@@ -29,7 +28,7 @@ function CourseCard({ image, style, children, children2, children3 }) {
             backgroundColor: "#2220",
           }}
         >
-          Preview 
+          Preview
         </CustomButton>
       </div>
     </div>

@@ -1,32 +1,38 @@
 .allCourse {
   width: 100%;
-
   background-color: #484c4b;
   padding: 0 10em;
   display: flex;
   justify-content: center;
   flex-direction: column;
-}.allcourseContainer{
-  min-height:100vh;
+}
+.allcourseContainer {
+  min-height: 100vh;
 }
 .courseHeader {
   background-color: #7b807e;
   height: 30vh;
 }
-.stickyHeader{
-  display:flex;
-  justify-content:center;
-  align-items:flex-end;
+.stickyHeader {
+  /* display: flex; */
+  width: 100%;
+  display:grid;
+  grid-template-columns: repeat(5 , 1fr);
+  justify-content: center;
+  /* align-items: flex-end; */
   height: 10vh;
+  justify-content: space-evenly;
 }
-.searchBar{
-  background-color:blue;
+.searchBar {
+  /* background-color: blue; */
   height: 7vh;
+  width: 100%;
 }
-.tagSection{
+.tagSection {
   /* background-color:blue; */
   height: 10vh;
-}.couseGridSection{
-  background-color:green;
+}
+.couseGridSection {
+  background-color: green;
   height: 100vh;
 }
