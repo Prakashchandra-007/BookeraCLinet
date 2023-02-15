@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e5209145.css",
+    "main.js": "/static/js/main.875b8c60.js",
+    "static/js/787.69963474.chunk.js": "/static/js/787.69963474.chunk.js",
+    "static/media/dotedImg.svg": "/static/media/dotedImg.a8ae9c372907c9f54159ee422fb4ae3f.svg",
+    "static/media/MouvereBold-VG9EB.ttf": "/static/media/MouvereBold-VG9EB.35970799bf0dcacd7a8c.ttf",
+    "static/media/heroSecImg.svg": "/static/media/heroSecImg.2e6fe7fc53446d6c998b053167d1f311.svg",
+    "static/media/Aloevera-OVoWO.ttf": "/static/media/Aloevera-OVoWO.e1afeee5869bb951a95d.ttf",
+    "static/media/codeImg.svg": "/static/media/codeImg.9cd947bc1e4833052ca2c16661325dc1.svg",
+    "static/media/rightside.jpg": "/static/media/rightside.71a8df0ce21c422225d8.jpg",
+    "static/media/Chocolada.ttf": "/static/media/Chocolada.43f01c67373347909c0a.ttf",
+    "static/media/card1Img.jpg": "/static/media/card1Img.c1c618f304ffd673e7d7.jpg",
+    "static/media/card3Img.jpg": "/static/media/card3Img.c50b5192ad723b85765c.jpg",
+    "static/media/card2Img.jpg": "/static/media/card2Img.59cc60eecb3089e89c94.jpg",
+    "index.html": "/index.html",
+    "static/media/circle.svg": "/static/media/circle.ea1e2095d0751582bd40201514fc39c7.svg",
+    "main.e5209145.css.map": "/static/css/main.e5209145.css.map",
+    "main.875b8c60.js.map": "/static/js/main.875b8c60.js.map",
+    "787.69963474.chunk.js.map": "/static/js/787.69963474.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5209145.css",
+    "static/js/main.875b8c60.js"
+  ]
+}
