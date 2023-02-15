@@ -2,6 +2,7 @@
   "name": "bookera",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://prakashchandra-007.github.io/BookeraCLinet/",
   "dependencies": {
     "@chakra-ui/react": "^2.4.9",
     "@emotion/react": "^11.10.5",
