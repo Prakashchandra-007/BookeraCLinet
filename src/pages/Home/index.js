@@ -18,7 +18,7 @@ import CourseCard from "../../components/molecules/CourseCard";
 import card1Img from "../../asserts/images/element/card1Img.jpg";
 import card2Img from "../../asserts/images/element/card2Img.jpg";
 import card3Img from "../../asserts/images/element/card3Img.jpg";
-
+import { ArrowRight } from 'react-feather';
 const Home = () => {
   return (
     <div className="homeContainer">

@@ -1,9 +1,32 @@
 .allCourse {
   width: 100%;
-  height: 100vh;
-  background-color: aquamarine;
+
+  background-color: #484c4b;
   padding: 0 10em;
   display: flex;
   justify-content: center;
   flex-direction: column;
+}.allcourseContainer{
+  min-height:100vh;
+}
+.courseHeader {
+  background-color: #7b807e;
+  height: 30vh;
+}
+.stickyHeader{
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  height: 10vh;
+}
+.searchBar{
+  background-color:blue;
+  height: 7vh;
+}
+.tagSection{
+  /* background-color:blue; */
+  height: 10vh;
+}.couseGridSection{
+  background-color:green;
+  height: 100vh;
 }

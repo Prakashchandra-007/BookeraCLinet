@@ -2,8 +2,10 @@
   color: #fff;
   padding: 0.5em 0.5em 0.5em;
   background-color: #6972f0;
+  display:flex
 }
 .customButton:hover {
   color: #fff;
   background-color: #7d84ee;
 }
+ 

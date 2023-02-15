@@ -1,7 +1,9 @@
 import React from "react";
 import "./customButton.css";
 import colours from "../../../contants/colours";
-function CustomButton({ children, width, height, callback, style }) {
+
+
+function CustomButton({ children, width, height, callback, style,icon,iconPosition }) {
   const styles = {...style , width: width, height: height};
 
   return (
@@ -11,7 +13,7 @@ function CustomButton({ children, width, height, callback, style }) {
       onClick={callback}
       className="customButton"
     >
-      {children}
+   <div className="btnIcons"> {iconPosition==='left' && icon}</div> {children} <div className="btnIcons">{ iconPosition==='right' && icon}</div>
     </button>
   );
 }
