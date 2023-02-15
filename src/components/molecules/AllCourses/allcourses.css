@@ -8,31 +8,49 @@
 }
 .allcourseContainer {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .courseHeader {
-  background-color: #7b807e;
+  background-color: #923939;
   height: 30vh;
+  display: flex;
+  /* height: auto; */
+  flex-wrap: wrap;
+  justify-content: left;
 }
 .stickyHeader {
-  /* display: flex; */
+  display: flex;
+  /* background-color: rgb(65, 219, 9); */
   width: 100%;
-  display:grid;
-  grid-template-columns: repeat(5 , 1fr);
-  justify-content: center;
-  /* align-items: flex-end; */
+  /* display:grid; */
+  /* grid-template-columns: repeat(5 , 1fr); */
+  flex-wrap: wrap;
+  align-items:center;
+  margin-top:-10px;
+  margin-bottom:-10px;
   height: 10vh;
   justify-content: space-evenly;
 }
 .searchBar {
-  /* background-color: blue; */
+  background-color: blue;
   height: 7vh;
   width: 100%;
 }
+.searchBar > input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(181, 181, 181);
+}
 .tagSection {
-  /* background-color:blue; */
+  background-color:rgb(242, 190, 16);
   height: 10vh;
 }
-.couseGridSection {
+.courseGridSection {
   background-color: green;
   height: 100vh;
+  display:grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-template-rows: repeat(2, 1fr);
 }

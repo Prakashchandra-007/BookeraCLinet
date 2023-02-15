@@ -17,10 +17,7 @@ function AllCourses() {
             Learn something new!
           </Heading>
           <div className="searchBar">
-            <input
-              type="text"
-              placeholder="Search Course..."
-            />
+            <input type="text" placeholder="Search Course..." />
           </div>
           <div className="stickyHeader">
             <CustomButton
@@ -31,7 +28,7 @@ function AllCourses() {
               Browse All
             </CustomButton>
             <CustomButton
-              icon={<Star/>}
+              icon={<Star />}
               iconPosition={"left"}
               style={tabStyle}
             >
@@ -52,7 +49,7 @@ function AllCourses() {
               Early Access
             </CustomButton>
             <CustomButton
-              icon={<CreditCard/>}
+              icon={<CreditCard />}
               iconPosition={"left"}
               style={tabStyle}
             >
@@ -61,7 +58,8 @@ function AllCourses() {
           </div>
         </div>
         <div className="tagSection"></div>
-        <div className="couseGridSection"></div>
+        <div className="courseGridSection"></div>
+        <div className="courseGridSectionTwo"></div>
       </div>
     </div>
   );
