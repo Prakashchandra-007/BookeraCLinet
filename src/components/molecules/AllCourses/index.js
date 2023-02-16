@@ -3,7 +3,8 @@ import "./allcourses.css";
 import Heading from "../../atoms/headingText";
 import CustomButton from "../../atoms/CustomButton";
 import { Star, Globe, Flag, CreditCard, Activity } from "react-feather";
-
+import CourseCard from "../CourseCard";
+const cardArr = [1, 2, 4, 5, 6, 2, 4, 2]; //for dev
 function AllCourses() {
   const tabStyle = {
     backgroundColor: "#2220",
@@ -13,11 +14,18 @@ function AllCourses() {
     <div className="allCourse">
       <div className="allcourseContainer">
         <div className="courseHeader">
-          <Heading styles={{ marginBottom: "0.5em", color: "#fffff" }}>
+          <Heading styles={{ margin: "0.5em 0", color: "#e4e4e4" }}>
             Learn something new!
           </Heading>
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
+            <CustomButton
+              icon={<Globe />}
+              iconPosition={"left"}
+              style={{ backgroundColor: "blue" }}
+            >
+              Search
+            </CustomButton>
           </div>
           <div className="stickyHeader">
             <CustomButton
@@ -57,8 +65,35 @@ function AllCourses() {
             </CustomButton>
           </div>
         </div>
-        <div className="tagSection"></div>
-        <div className="courseGridSection"></div>
+        <div className="tagSection">
+          <CustomButton
+            style={{
+              backgroundColor: "#2220",
+              marginRight: 5,
+              borderRadius: 30,
+              borderWidth: 1,
+              padding: "0.3em  1em",
+            }}
+          >
+            Finance
+          </CustomButton>
+          <CustomButton
+            style={{
+              backgroundColor: "#2220",
+              marginRight: 5,
+              borderRadius: 30,
+              borderWidth: 1,
+              padding: "0.3em 1em",
+            }}
+          >
+            Data
+          </CustomButton>
+        </div>
+        <div className="courseGridSection">
+          {cardArr.map((item, i) => {
+            return <CourseCard key={item} />;
+          })}
+        </div>
         <div className="courseGridSectionTwo"></div>
       </div>
     </div>
