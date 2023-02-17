@@ -36,6 +36,7 @@ const Home = () => {
               marginBottom: 30,
               minWidth: "200",
               maxHeight: "200",
+              textAlign: "left",
             }}
           >
             Explore over 500 courses on: Finance | Banking | Business Case
