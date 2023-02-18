@@ -2,7 +2,7 @@ import React from "react";
 import "./allcourses.css";
 import Heading from "../../atoms/headingText";
 import CustomButton from "../../atoms/CustomButton";
-import { Star, Globe, Flag, CreditCard, Activity } from "react-feather";
+import { Star, Globe, Flag, CreditCard, Activity, Search } from "react-feather";
 import CourseCard from "../CourseCard";
 const cardArr = [1, 2, 4, 5, 6, 2, 4, 2]; //for dev
 function AllCourses() {
@@ -20,7 +20,7 @@ function AllCourses() {
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
             <CustomButton
-              icon={<Globe />}
+              icon={<Search/>}
               iconPosition={"left"}
               style={{ backgroundColor: "blue" }}
             >

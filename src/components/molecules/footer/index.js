@@ -92,8 +92,8 @@ function Footer() {
                 Our Team
               </NormalText>
             </li>
-            <li>
-              <NormalText style={{ color: "white", fontWeight: "100" }}>
+            <li >
+              <NormalText style={{ color: "white", fontWeight: "100", display:"flex"}}>
                 Careers
                 <CustomButton
                   style={{

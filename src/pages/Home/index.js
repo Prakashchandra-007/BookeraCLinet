@@ -13,12 +13,12 @@ import codeImg from "../../asserts/images/svgs/codeImg.svg";
 import circleImg from "../../asserts/images/svgs/circle.svg";
 import doted from "../../asserts/images/svgs/dotedImg.svg";
 import sideImg from "../../asserts/images/svgs/heroSecImg.svg";
-import { Flex } from "@chakra-ui/react";
+import { color, Flex } from "@chakra-ui/react";
 import CourseCard from "../../components/molecules/CourseCard";
 import card1Img from "../../asserts/images/element/card1Img.jpg";
 import card2Img from "../../asserts/images/element/card2Img.jpg";
 import card3Img from "../../asserts/images/element/card3Img.jpg";
-import { ArrowRight } from "react-feather";
+import { ArrowRight ,Code ,MousePointer,Layers, Target} from "react-feather";
 const Home = () => {
   return (
     <div className="homeContainer">
@@ -43,8 +43,14 @@ const Home = () => {
             Studies | Business Development
           </SubHeading>
 
-          <CustomButton width={150} height={40}>
-            Start Free Trail
+          <CustomButton width={150} height={40} icon={<ArrowRight />}
+          iconPosition={"right"}style={{
+            color: "#ffffff",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
+            Start Free Trial
           </CustomButton>
           <SmallHeading>
             Join 1.7 Million students & working professionals in companies like
@@ -58,7 +64,7 @@ const Home = () => {
 
       {/* COURSE SECTION */}
 
-      <div className="courseSection">
+      <div className="courseSectionOne">
         <div className="courseSection_left">
           <ul
             style={{
@@ -68,9 +74,11 @@ const Home = () => {
               paddingBottom: 20,
             }}
           >
-            <li>INTERACTIVE</li>
+            <li style={{ listStyleType: "disc" }}>
+              <h1 style={{ color: "white", textAlign: "left" }}>INTERACTIVE</h1>
+            </li>
           </ul>
-          <MedsizeHeading styles={{ color: " white" }}>
+          <MedsizeHeading styles={{ color: " white", textAlign: "left" }}>
             LIBRARY ON THE GO...
           </MedsizeHeading>
           <SubHeading
@@ -79,6 +87,7 @@ const Home = () => {
               paddingleft: "50%",
               marginTop: 30,
               marginBottom: 30,
+              textAlign: "left",
             }}
           >
             You don’t get better at swimming by watching others. Coding is no
@@ -87,23 +96,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <img
-                src={opncls}
-                style={{ width: "10%", height: "20%" }}
-                alt="</>"
-                className="opnclsImg"
-              />
+              <Code style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <img
-                src={opncls}
-                style={{ width: "10%", height: "20%" }}
-                alt="</>"
-                className="opnclsImg"
-              />
+              <MousePointer style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -124,7 +123,7 @@ const Home = () => {
         </div>
         {/* downsection of course section */}
       </div>
-      <div className="courseSection">
+      <div className="courseSectionTwo">
         <div
           className="courseSection_left"
           style={{ minWidth: "200", maxHeight: "200" }}
@@ -147,9 +146,14 @@ const Home = () => {
               paddingBottom: 20,
               minWidth: "200",
               maxHeight: "200",
+              textAlign: "left",
             }}
           >
-            <li>2X FASTER LEARNING</li>
+            <li style={{ listStyleType: "disc" }}>
+              <h1 style={{ color: "white", textAlign: "left" }}>
+                2X FASTER LEARNING
+              </h1>
+            </li>
           </ul>
           <MedsizeHeading styles={{ color: " white" }}>
             2x FASTER LEARNING
@@ -162,6 +166,7 @@ const Home = () => {
               marginBottom: 30,
               minWidth: "100",
               maxHeight: "100",
+              textAlign: "left",
             }}
           >
             Reading is faster than watching: The average tutorial is spoken at
@@ -171,24 +176,14 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <img
-                src={opncls}
-                style={{ width: "10%", height: "20%" }}
-                alt="</>"
-                className="opnclsImg"
-              />
+              <Target style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <img
-                src={opncls}
-                style={{ width: "10%", height: "20%" }}
-                alt="</>"
-                className="opnclsImg"
-              />
-              <SmallHeading styles={{ color: "white" }}>
+              <Layers style={{color:"#87c5ff"}}/>
+              <SmallHeading styles={{ color: "white", textAlign: "left" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
@@ -206,8 +201,19 @@ const Home = () => {
         >
           Supercharge Your Development Career
         </SubHeading>
-        <CustomButton width={150} height={40}>
-          Start Free Trail
+        <CustomButton
+          width={150}
+          height={40}
+          icon={<ArrowRight />}
+          iconPosition={"right"}
+          style={{
+            color: "#ffffff",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Start Free Trial
         </CustomButton>
         <img src={doted} alt="dotedImg" className="dotedImg" />
       </div>
@@ -218,6 +224,7 @@ const Home = () => {
             paddingleft: "50%",
             marginTop: 30,
             marginBottom: 30,
+            textAlign: "left",
           }}
         >
           Stop Scrolling. Start Coding.Supercharge Your Development Career
@@ -243,8 +250,19 @@ const Home = () => {
           </CourseCard>
         </div>
 
-        <CustomButton width={150} height={60}>
-          Start Your Free Trail
+        <CustomButton
+          width={200}
+          height={60}
+          icon={<ArrowRight />}
+          iconPosition={"right"}
+          style={{
+            color: "#ffffff",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          Start Your Free Trial
         </CustomButton>
       </div>
       <div className="feedBackSection">
@@ -264,6 +282,7 @@ const Home = () => {
           <img
             src={doted}
             alt="dotedImg"
+            className="dotedImg"
             style={{ position: "absolute", width: "70%", height: "100" }}
           />
           <div className="feedBackSectionleft">
@@ -273,12 +292,23 @@ const Home = () => {
                 paddingleft: "50%",
                 marginTop: 30,
                 marginBottom: 30,
+                textAlign: "left",
+                minWidth: "100",
+                maxHeight: "100",
+                justifyContent: "center",
+
               }}
             >
-              Join more than 1.7 Million Developers
+              Join more than <h1 style={{fontSize:"120%", color:"#6972f0"}}>1.7 Million</h1> Developers
             </SubHeading>
 
-            <CustomButton width={150} height={40}>
+            <CustomButton width={160} height={40} icon={<ArrowRight />}
+          iconPosition={"right"} style={{
+            color: "#ffffff",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}>
               Sign up for Free
             </CustomButton>
           </div>
