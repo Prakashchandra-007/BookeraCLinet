@@ -70,7 +70,7 @@ const Home = () => {
             style={{
               color: "rgb(126,128,249)",
               marginTop: 30,
-              paddingLeft: 20,
+              // paddingLeft: 20,
               paddingBottom: 20,
             }}
           >
@@ -142,10 +142,8 @@ const Home = () => {
             style={{
               color: "rgb(126,128,249)",
               marginTop: 30,
-              paddingLeft: 20,
+              // paddingLeft: 20,
               paddingBottom: 20,
-              minWidth: "200",
-              maxHeight: "200",
               textAlign: "left",
             }}
           >
