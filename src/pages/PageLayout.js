@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet, Link } from "react-router-dom";
 import CustomButton from "../components/atoms/CustomButton";
+import HumbergBtn from "../components/atoms/HumbergBtn";
 import Footer from "../components/molecules/Footer";
 import Header from "../components/molecules/header";
 // import { Header } from "../components/molecules";
@@ -11,6 +12,7 @@ const PageLayout = () => {
         <h1 className="logo">
           B<span style={{ color: "#6972f0" }}>OO</span>KERA_
         </h1>
+        <HumbergBtn />
         <nav className="menuBar">
           <h3 className="menuItem">
             <Link to="/">Home</Link>

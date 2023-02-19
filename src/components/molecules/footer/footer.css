@@ -10,21 +10,21 @@
   justify-content: center;
   align-items: center;
   padding: 5em 5em;
-  
 }
 .footContainer {
   width: 100%;
   padding: 0.5em 0;
   border-width: 1px 0;
   text-align: left;
-  display:grid;
+  display: grid;
+  align-items: center;
   grid-template-columns: repeat(4, minmax(250px, 1fr));
 }
 
 @media (max-width: 1180px) {
   .footContainer {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  } 
+  }
 }
 
 .footerRow {
