@@ -5,11 +5,15 @@
 .humbergbtnContainer:hover {
 }
 .dropdownMenu {
-  position: absolute;
+  position: fixed;
   right: 0;
-  width: 200px;
-  height: 300px;
-  background-color: rgb(209, 218, 187);
+  background-color: #1e1e27;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
 }
 @media screen and (min-width: 600px) {
   .humbergbtnContainer {

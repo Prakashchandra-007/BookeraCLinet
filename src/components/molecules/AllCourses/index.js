@@ -12,6 +12,7 @@ function AllCourses() {
   };
   return (
     <div className="allCourse">
+      {/* <div className="allcourseContainer"></div> */}
       <div className="allcourseContainer">
         <div className="courseHeader">
           <Heading styles={{ margin: "0.5em 0", color: "#e4e4e4" }}>
@@ -20,7 +21,7 @@ function AllCourses() {
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
             <CustomButton
-              icon={<Search/>}
+              icon={<Search />}
               iconPosition={"left"}
               style={{ backgroundColor: "blue" }}
             >
