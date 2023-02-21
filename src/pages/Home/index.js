@@ -7,7 +7,6 @@ import Heading from "../../components/atoms/headingText";
 import SubHeading from "../../components/atoms/SubHeading";
 import SmallHeading from "../../components/atoms/SmallHeading";
 import MedsizeHeading from "../../components/atoms/MedsizeHeading";
-import opncls from "./coursesectionImg/opncls.jpg";
 import rightside from "./courseSecRight/rightside.jpg";
 import codeImg from "../../asserts/images/svgs/codeImg.svg";
 import circleImg from "../../asserts/images/svgs/circle.svg";

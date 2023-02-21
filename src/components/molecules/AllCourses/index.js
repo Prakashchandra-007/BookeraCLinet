@@ -4,7 +4,12 @@ import Heading from "../../atoms/headingText";
 import CustomButton from "../../atoms/CustomButton";
 import { Star, Globe, Flag, CreditCard, Activity, Search } from "react-feather";
 import CourseCard from "../CourseCard";
+import card1Img from "../../../asserts/images/element/card1Img.jpg";
+import SubHeading from "../../atoms/SubHeading";
+import SmallHeading from "../../atoms/SmallHeading";
 const cardArr = [1, 2, 4, 5, 6, 2, 4, 2]; //for dev
+// import card1Img from "../../asserts/images/element/card1Img.jpg";
+
 function AllCourses() {
   const tabStyle = {
     backgroundColor: "#2220",
@@ -23,7 +28,9 @@ function AllCourses() {
             <CustomButton
               icon={<Search />}
               iconPosition={"left"}
-              style={{ backgroundColor: "blue" }}
+              style={{ backgroundColor: "blue" , display: "flex" ,flexWrap: "wrap" }}
+
+
             >
               Search
             </CustomButton>
@@ -92,10 +99,18 @@ function AllCourses() {
         </div>
         <div className="courseGridSection">
           {cardArr.map((item, i) => {
-            return <CourseCard key={item} />;
+            return (
+              <CourseCard key={item} image={card1Img}>
+                <SmallHeading styles={{ color: "white" }}>
+                  Educative
+                </SmallHeading>
+                <SubHeading styles={{ color: "white", textAlign: "left" }}>
+                  Grokking the Machine Learning Interview
+                </SubHeading>
+              </CourseCard>
+            );
           })}
         </div>
-        <div className="courseGridSectionTwo"></div>
       </div>
     </div>
   );

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { List, X } from "react-feather";
-import { TbAlignRight } from "react-icons/tb";
+import { TbAlignRight , TbX} from "react-icons/tb";
 import { Link } from "react-router-dom";
 import Heading from "../headingText";
 import "./humberg.css";
@@ -15,7 +14,7 @@ function HumbergBtn() {
         }}
         style={{}}
       >
-        {dropdown ? <X color="white" /> : <TbAlignRight color="white" />}
+        {dropdown ? <TbX color="white" /> : <TbAlignRight color="white" />}
       </button>
       {dropdown && (
         <div className="dropdownMenu">
@@ -25,7 +24,8 @@ function HumbergBtn() {
             }}
             style={{ position: "absolute", top: "10", right: "1.5em" }}
           >
-            <X color="white" />
+          
+            <TbX color="white" />
           </button>
           <ul>
             <li>
