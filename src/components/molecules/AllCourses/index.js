@@ -3,7 +3,7 @@ import "./allcourses.css";
 import Heading from "../../atoms/headingText";
 import CustomButton from "../../atoms/CustomButton";
 // import { Star, Globe, Flag, CreditCard, Activity} from "react-feather";
-// import { TbArrowNarrowRight ,TbSearch,} from "react-icons/tb";
+import { TbArrowNarrowRight} from "react-icons/tb";
 import { MdFlag,MdOutlineCreditCardOff ,MdStarBorder ,MdLanguage ,MdSearch} from "react-icons/md";
 import { BsStars } from "react-icons/bs";
 import CourseCard from "../CourseCard";
@@ -112,6 +112,21 @@ function AllCourses() {
             );
           })}
         </div>
+        <CustomButton
+          width={200}
+          height={60}
+          style={{
+            color: "black",
+            backgroundColor: "white",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            borderWidth:"1px solid",
+            margin: "1em 0 5em",
+          }}
+        >
+          Show More
+        </CustomButton>
       </div>
     </div>
   );

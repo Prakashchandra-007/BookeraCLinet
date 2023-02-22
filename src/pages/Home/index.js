@@ -261,7 +261,7 @@ const Home = () => {
             alignItems: "center",
           }}
         >
-          Start Your Free Trial
+          Browse all courses
         </CustomButton>
       </div>
       <div className="feedBackSection">
