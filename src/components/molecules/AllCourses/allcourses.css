@@ -66,26 +66,18 @@
   min-height: 100vh;
   display: grid;
   width: 100%;
-  padding: 0.5em 0 0;
-  text-align: left;
+  padding: 0 10em;
   display: grid;
-  padding-left: 2em;
-  /* margin: 10; */
   align-items: center;
   grid-column-gap: 0.5em;
   grid-template-columns: repeat(3, minmax(250px, 1fr));
   /* grid-template-rows: repeat(auto-fill, minmax(250px, 1fr)); */
 }
 
-/* .cardstrans{
-  transition: 1s;
-}
-.cardstrans:hover{
-       transform: scale(1.3);
-} */
 @media (max-width: 1180px) {
   .courseGridSection {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 0 2em;
   }
 }
 @media screen and (max-width: 550px) {

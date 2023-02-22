@@ -18,7 +18,14 @@ import card1Img from "../../asserts/images/element/card1Img.jpg";
 import card2Img from "../../asserts/images/element/card2Img.jpg";
 import card3Img from "../../asserts/images/element/card3Img.jpg";
 // import {Code ,MousePointer,Layers, Target} from "react-feather";
-import { TbArrowNarrowRight ,TbClick ,TbCode ,TbTarget,TbStack} from "react-icons/tb";
+import {
+  TbArrowNarrowRight,
+  TbClick,
+  TbCode,
+  TbTarget,
+  TbStack,
+} from "react-icons/tb";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -44,13 +51,18 @@ const Home = () => {
             Studies | Business Development
           </SubHeading>
 
-          <CustomButton width={150} height={40} icon={<TbArrowNarrowRight/>}
-          iconPosition={"right"}style={{
-            color: "#ffffff",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}>
+          <CustomButton
+            width={150}
+            height={40}
+            icon={<TbArrowNarrowRight />}
+            iconPosition={"right"}
+            style={{
+              color: "#ffffff",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
             Start Free Trial
           </CustomButton>
           <SmallHeading>
@@ -97,13 +109,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <TbCode style={{color:"#87c5ff"}}/>
+              <TbCode style={{ color: "#87c5ff" }} />
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <TbClick style={{color:"#87c5ff"}}/>
+              <TbClick style={{ color: "#87c5ff" }} />
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -175,13 +187,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <TbTarget style={{color:"#87c5ff"}}/>
+              <TbTarget style={{ color: "#87c5ff" }} />
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <TbStack style={{color:"#87c5ff"}}/>
+              <TbStack style={{ color: "#87c5ff" }} />
               <SmallHeading styles={{ color: "white", textAlign: "left" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -261,7 +273,7 @@ const Home = () => {
             alignItems: "center",
           }}
         >
-          Browse all courses
+          <Link to="/allcourses"> Browse all courses</Link>
         </CustomButton>
       </div>
       <div className="feedBackSection">
@@ -295,19 +307,27 @@ const Home = () => {
                 minWidth: "100",
                 maxHeight: "100",
                 justifyContent: "center",
-
               }}
             >
-              Join more than <h1 style={{fontSize:"120%", color:"#6972f0"}}>1.7 Million</h1> Developers
+              Join more than{" "}
+              <h1 style={{ fontSize: "120%", color: "#6972f0" }}>
+                1.7 Million
+              </h1>{" "}
+              Developers
             </SubHeading>
 
-            <CustomButton width={160} height={40} icon={<TbArrowNarrowRight />}
-          iconPosition={"right"} style={{
-            color: "#ffffff",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}>
+            <CustomButton
+              width={160}
+              height={40}
+              icon={<TbArrowNarrowRight />}
+              iconPosition={"right"}
+              style={{
+                color: "#ffffff",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               Sign up for Free
             </CustomButton>
           </div>

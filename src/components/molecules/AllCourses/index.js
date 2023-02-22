@@ -3,8 +3,14 @@ import "./allcourses.css";
 import Heading from "../../atoms/headingText";
 import CustomButton from "../../atoms/CustomButton";
 // import { Star, Globe, Flag, CreditCard, Activity} from "react-feather";
-import { TbArrowNarrowRight} from "react-icons/tb";
-import { MdFlag,MdOutlineCreditCardOff ,MdStarBorder ,MdLanguage ,MdSearch} from "react-icons/md";
+import { TbArrowNarrowRight } from "react-icons/tb";
+import {
+  MdFlag,
+  MdOutlineCreditCardOff,
+  MdStarBorder,
+  MdLanguage,
+  MdSearch,
+} from "react-icons/md";
 import { BsStars } from "react-icons/bs";
 import CourseCard from "../CourseCard";
 import card1Img from "../../../asserts/images/element/card1Img.jpg";
@@ -21,7 +27,6 @@ function AllCourses() {
   };
   return (
     <div className="allCourse">
-      {/* <div className="allcourseContainer"></div> */}
       <div className="allcourseContainer">
         <div className="courseHeader">
           <Heading styles={{ margin: "0.5em 0", color: "#e4e4e4" }}>
@@ -30,7 +35,7 @@ function AllCourses() {
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
             <CustomButton
-              icon={<MdSearch/>}
+              icon={<MdSearch />}
               iconPosition={"left"}
               style={{ backgroundColor: "blue", padding: "1em" }}
             >
@@ -41,7 +46,7 @@ function AllCourses() {
             <CustomButton
               icon={<MdLanguage />}
               iconPosition={"left"}
-              style={{fontSize:"1em"}}
+              style={{ fontSize: "1em" }}
             >
               Browse All
             </CustomButton>
@@ -99,12 +104,15 @@ function AllCourses() {
             Data
           </CustomButton>
         </div>
-        <SideNavBar style={{}}/>
+        <SideNavBar />
         <div className="courseGridSection">
           {cardArr.map((item, i) => {
             return (
               <CourseCard key={item} image={card1Img} style={{}}>
-                <SmallHeading className="cardstrans" styles={{ color: "white"}}>
+                <SmallHeading
+                  className="cardstrans"
+                  styles={{ color: "white" }}
+                >
                   Educative
                 </SmallHeading>
                 <SubHeading styles={{ color: "white", textAlign: "left" }}>
@@ -123,7 +131,7 @@ function AllCourses() {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            borderWidth:"1px solid",
+            borderWidth: "1px solid",
             margin: "1em 0 5em",
           }}
         >

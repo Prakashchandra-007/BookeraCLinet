@@ -8,6 +8,9 @@
   margin: 1em 2em;
   overflow: hidden;
 }
+.courseCard:hover {
+  transform: translateY(30);
+}
 .titleBlock {
   height: 40%;
   padding-left: 0.5em;
