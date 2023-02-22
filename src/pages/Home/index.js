@@ -17,7 +17,9 @@ import CourseCard from "../../components/molecules/CourseCard";
 import card1Img from "../../asserts/images/element/card1Img.jpg";
 import card2Img from "../../asserts/images/element/card2Img.jpg";
 import card3Img from "../../asserts/images/element/card3Img.jpg";
-import { ArrowRight ,Code ,MousePointer,Layers, Target} from "react-feather";
+// import {Code ,MousePointer,Layers, Target} from "react-feather";
+import { TbArrowNarrowRight ,TbClick ,TbCode ,TbTarget,TbStack} from "react-icons/tb";
+
 const Home = () => {
   return (
     <div className="homeContainer">
@@ -42,7 +44,7 @@ const Home = () => {
             Studies | Business Development
           </SubHeading>
 
-          <CustomButton width={150} height={40} icon={<ArrowRight />}
+          <CustomButton width={150} height={40} icon={<TbArrowNarrowRight/>}
           iconPosition={"right"}style={{
             color: "#ffffff",
             display: "flex",
@@ -95,13 +97,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <Code style={{color:"#87c5ff"}}/>
+              <TbCode style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <MousePointer style={{color:"#87c5ff"}}/>
+              <TbClick style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -173,13 +175,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <Target style={{color:"#87c5ff"}}/>
+              <TbTarget style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <Layers style={{color:"#87c5ff"}}/>
+              <TbStack style={{color:"#87c5ff"}}/>
               <SmallHeading styles={{ color: "white", textAlign: "left" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -201,7 +203,7 @@ const Home = () => {
         <CustomButton
           width={150}
           height={40}
-          icon={<ArrowRight />}
+          icon={<TbArrowNarrowRight />}
           iconPosition={"right"}
           style={{
             color: "#ffffff",
@@ -250,7 +252,7 @@ const Home = () => {
         <CustomButton
           width={200}
           height={60}
-          icon={<ArrowRight />}
+          icon={<TbArrowNarrowRight />}
           iconPosition={"right"}
           style={{
             color: "#ffffff",
@@ -299,7 +301,7 @@ const Home = () => {
               Join more than <h1 style={{fontSize:"120%", color:"#6972f0"}}>1.7 Million</h1> Developers
             </SubHeading>
 
-            <CustomButton width={160} height={40} icon={<ArrowRight />}
+            <CustomButton width={160} height={40} icon={<TbArrowNarrowRight />}
           iconPosition={"right"} style={{
             color: "#ffffff",
             display: "flex",

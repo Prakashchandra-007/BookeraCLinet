@@ -2,7 +2,10 @@ import React from "react";
 import "./allcourses.css";
 import Heading from "../../atoms/headingText";
 import CustomButton from "../../atoms/CustomButton";
-import { Star, Globe, Flag, CreditCard, Activity, Search } from "react-feather";
+// import { Star, Globe, Flag, CreditCard, Activity} from "react-feather";
+// import { TbArrowNarrowRight ,TbSearch,} from "react-icons/tb";
+import { MdFlag,MdOutlineCreditCardOff ,MdStarBorder ,MdLanguage ,MdSearch} from "react-icons/md";
+import { BsStars } from "react-icons/bs";
 import CourseCard from "../CourseCard";
 import card1Img from "../../../asserts/images/element/card1Img.jpg";
 import SubHeading from "../../atoms/SubHeading";
@@ -26,46 +29,44 @@ function AllCourses() {
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
             <CustomButton
-              icon={<Search />}
+              icon={<MdSearch/>}
               iconPosition={"left"}
-              style={{ backgroundColor: "blue" , display: "flex" ,flexWrap: "wrap" }}
-
-
+              style={{ backgroundColor: "blue", padding: "1em" }}
             >
               Search
             </CustomButton>
           </div>
           <div className="stickyHeader">
             <CustomButton
-              icon={<Globe />}
+              icon={<MdLanguage />}
               iconPosition={"left"}
               style={tabStyle}
             >
               Browse All
             </CustomButton>
             <CustomButton
-              icon={<Star />}
+              icon={<MdStarBorder />}
               iconPosition={"left"}
               style={tabStyle}
             >
               Our Picks
             </CustomButton>
             <CustomButton
-              icon={<Activity />}
+              icon={<BsStars />}
               iconPosition={"left"}
               style={tabStyle}
             >
               New
             </CustomButton>
             <CustomButton
-              icon={<Flag />}
+              icon={<MdFlag />}
               iconPosition={"left"}
               style={tabStyle}
             >
               Early Access
             </CustomButton>
             <CustomButton
-              icon={<CreditCard />}
+              icon={<MdOutlineCreditCardOff />}
               iconPosition={"left"}
               style={tabStyle}
             >
