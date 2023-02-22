@@ -1,9 +1,32 @@
 import { color } from "@chakra-ui/react";
 import React, { useState } from "react";
+import { Search } from "react-feather";
 import "./sidenavbar.css";
 
 const SideNavBar = ({ style }) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const menuItems = [
+{
+    text: "Home",
+    // icon: ;
+}
+{
+    text: "Home",
+    // icon: ;
+}
+{
+    text: "Home",
+    // icon: ;
+}
+{
+    text: "Home",
+    // icon: ;
+}
+{
+    text: "Home",
+    // icon: ;
+}
+  ];
 
   return (
     <div
@@ -32,6 +55,7 @@ const SideNavBar = ({ style }) => {
                 <span></span>
               </button>
         </div>
+        <div className="menu">{menuItems.map(() =>)}</div>
       </div>
   );
 };
