@@ -1,9 +1,9 @@
 import React from "react";
 import "./smallHeading.css";
 
-const SmallHeading = ({ children, styles }) => {
+const SmallHeading = ({ children, style }) => {
   return (
-    <h4 style={styles} className="smallheading">
+    <h4 style={style} className="smallheading">
       {children}
     </h4>
   );

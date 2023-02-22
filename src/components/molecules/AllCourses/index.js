@@ -10,6 +10,7 @@ import CourseCard from "../CourseCard";
 import card1Img from "../../../asserts/images/element/card1Img.jpg";
 import SubHeading from "../../atoms/SubHeading";
 import SmallHeading from "../../atoms/SmallHeading";
+import SideNavBar from "../SideNavBar";
 const cardArr = [1, 2, 4, 5, 6, 2, 4, 2]; //for dev
 // import card1Img from "../../asserts/images/element/card1Img.jpg";
 
@@ -40,7 +41,7 @@ function AllCourses() {
             <CustomButton
               icon={<MdLanguage />}
               iconPosition={"left"}
-              style={tabStyle}
+              style={{fontSize:"1em"}}
             >
               Browse All
             </CustomButton>
@@ -98,11 +99,12 @@ function AllCourses() {
             Data
           </CustomButton>
         </div>
+        <SideNavBar style={{}}/>
         <div className="courseGridSection">
           {cardArr.map((item, i) => {
             return (
-              <CourseCard key={item} image={card1Img}>
-                <SmallHeading styles={{ color: "white" }}>
+              <CourseCard key={item} image={card1Img} style={{}}>
+                <SmallHeading className="cardstrans" styles={{ color: "white"}}>
                   Educative
                 </SmallHeading>
                 <SubHeading styles={{ color: "white", textAlign: "left" }}>
