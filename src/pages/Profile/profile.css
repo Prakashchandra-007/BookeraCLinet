@@ -1,0 +1,32 @@
+.profileContainer {
+  background-color: white;
+}
+
+.profileNameCard {
+  position: absolute;
+  /* width: 50%; */
+  /* height: 100%; */
+  box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+  /* padding-left: 2.4rem; */
+  left: 7.2rem;
+  top: 6.4rem;
+  max-width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: none;
+  background: #fff;
+  /* width: 100vw; */
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 0;
+  padding: 0;
+}
+
+.profileMylearning {
+  background-color: yellow;
+}
+
+.profileCourse {
+  background-color: blue;
+}
