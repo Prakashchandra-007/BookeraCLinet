@@ -11,28 +11,26 @@ import SubHeading from "../../components/atoms/SubHeading";
 import CourseCard from "../../components/molecules/CourseCard";
 
 const cardArr = [1, 2, 4, 5, 6, 2, 4, 2];
-
+const menus = ["All courses", "My list", "Wishlist", "Career hunt"];
 const Profile = ({ username, price }) => {
   return (
     <div className="profileContainer">
-      <div className="profileHead">
-      <img src={Image} style={{display:"flex" ,flexDirection:"column",flexWrap:"wrap-reverse"}}/>
-        <div
-          className="profileNameCard"
-          style={{ minWidhth: "200", maxHeight: "200" }}
-        >
-        
-          <Heading>Welcome back,{username}!</Heading>
-          <SmallHeading>
-            Make today the day.Get courses from real-world experts from ₹{price}{" "}
-          </SmallHeading>
-        </div>
+      <div className="profileHeaderSection">
+        <Heading styles={{ color: "white" }}>My Learning</Heading>
+      </div>
+      <div className="prfileStickyMenu">
+        {/* <h2>asdfasf</h2> */}
+        {menus.map((item) => {
+          return (
+            <button className="stickybatBtn">
+              <h2> {item} </h2>
+            </button>
+          );
+        })}
       </div>
       <div className="profileMylearning">
-        <CustomButton style={{color:"blue",backgroundColor: 'transparent', textDecoration: 'underline blue', paddingLeft:"80%", top:"20"}}>My Learning</CustomButton>
-        <Heading>Let's start leraning,{username}</Heading>
         <div className="profileCourse">
-        {/* <div className="courseGridSection"> */}
+          {/* <div className="courseGridSection"> */}
           {cardArr.map((item, i) => {
             return (
               <CourseCard key={item} image={card1Img}>
