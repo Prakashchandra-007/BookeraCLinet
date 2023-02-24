@@ -31,6 +31,7 @@ function CourseCard({ image, style, children }) {
           Preview
         </CustomButton>
       </div>
+      <div>Leave a rating</div>
     </div>
   );
 }
