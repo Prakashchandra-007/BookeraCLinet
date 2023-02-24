@@ -54,13 +54,20 @@ const Home = () => {
           <CustomButton
             width={150}
             height={40}
-            icon={<TbArrowNarrowRight />}
+            icon={
+              <TbArrowNarrowRight
+                style={{
+                  fontSize: "25",
+                }}
+              />
+            }
             iconPosition={"right"}
             style={{
               color: "#ffffff",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              fontSize: "100",
             }}
           >
             Start Free Trial
@@ -109,13 +116,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <TbCode style={{ color: "#87c5ff" }} />
+              <TbCode style={{ color: "#87c5ff", fontSize: "25" }} />
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <TbClick style={{ color: "#87c5ff" }} />
+              <TbClick style={{ color: "#87c5ff", fontSize: "25" }} />
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -187,13 +194,13 @@ const Home = () => {
           </SubHeading>
           <Flex>
             <div>
-              <TbTarget style={{ color: "#87c5ff" }} />
+              <TbTarget style={{ color: "#87c5ff", fontSize: "25" }} />
               <SmallHeading styles={{ color: "white" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
             </div>
             <div>
-              <TbStack style={{ color: "#87c5ff" }} />
+              <TbStack style={{ color: "#87c5ff", fontSize: "25" }} />
               <SmallHeading styles={{ color: "white", textAlign: "left" }}>
                 Hands-on Projects: Build Real World Applications
               </SmallHeading>
@@ -215,7 +222,13 @@ const Home = () => {
         <CustomButton
           width={150}
           height={40}
-          icon={<TbArrowNarrowRight />}
+          icon={
+            <TbArrowNarrowRight
+              style={{
+                fontSize: "25",
+              }}
+            />
+          }
           iconPosition={"right"}
           style={{
             color: "#ffffff",
@@ -264,7 +277,14 @@ const Home = () => {
         <CustomButton
           width={200}
           height={60}
-          icon={<TbArrowNarrowRight />}
+          icon={
+            <TbArrowNarrowRight
+              style={{
+                fontSize: "25",
+                alignItems: "center",
+              }}
+            />
+          }
           iconPosition={"right"}
           style={{
             color: "#ffffff",
@@ -319,7 +339,13 @@ const Home = () => {
             <CustomButton
               width={160}
               height={40}
-              icon={<TbArrowNarrowRight />}
+              icon={
+                <TbArrowNarrowRight
+                  style={{
+                    fontSize: "25",
+                  }}
+                />
+              }
               iconPosition={"right"}
               style={{
                 color: "#ffffff",
