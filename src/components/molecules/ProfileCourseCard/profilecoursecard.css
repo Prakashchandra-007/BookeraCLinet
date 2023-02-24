@@ -1,25 +1,38 @@
 .profileCourseContainer {
-  width: 350px;
-  height: 320px;
-  min-width: 200px;
-  background-color: rgb(38, 37, 46);
+  max-width: 350px;
+  min-width: 100px;
+  max-height: 350px;
+  min-height: 150px;
+  background-color: rgb(93, 93, 95);
   border-radius: 0.3em;
   color: rgb(246, 241, 241);
   margin: 1em 2em;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  overflow:hidden;
 }
 
 .courseCard:hover {
   transform: translateY(30);
 }
 .profilectaBlock {
+  /* background-color: #c59b08; */
+  /* flex-wrap: wrap; */
   height: 30%;
   padding-left: 1%;
   background-color: 'white';
 }
+.profiletitleBlock {
+  display: flex;
+  flex-direction: column;
+  height: 10px;
+  padding-bottom: 10%;
+  /* padding-bottom: 0%; */
+}
 
 p {
-  padding-top: 3%;
+  padding-top: 5%;
   font-size: 10px;
 }
 
@@ -39,9 +52,7 @@ p {
 }
 
 .rating {
-  /* float: right; */
-  /* height: 46px; */
-  padding-left: 200px;
+  padding-left: 20px;
 }
 
 .rate {

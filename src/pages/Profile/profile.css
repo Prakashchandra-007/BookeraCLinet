@@ -28,18 +28,23 @@
 
 /* new */
 .profileHeaderSection {
-  height: 20vh;
+  min-height: 10vh;
+  max-height: 30vh;
   background-color: #3d3c39;
-  padding: 0 10em;
+  padding: 0 5em;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* align-items: center; */
 }
 .prfileStickyMenu {
   background-color: #3d3c39;
   display: flex;
   justify-content: flex-start;
-  height: 5vh;
-  padding: 0 10em;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  /* height: 5vh; */
+  padding: 0 5em;
   box-shadow: 10px 10px 0px 0px rgba(253, 253, 253, 0);
 }
 .stickybatBtn {
