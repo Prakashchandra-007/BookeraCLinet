@@ -42,7 +42,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  flex-wrap:nowrap;
+  flex-wrap: nowrap;
   /* height: 5vh; */
   padding: 0 5em;
   box-shadow: 10px 10px 0px 0px rgba(253, 253, 253, 0);
