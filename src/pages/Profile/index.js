@@ -1,17 +1,18 @@
 import React from "react";
-import card1Img from "../../asserts/images/element/card1Img.jpg";
+// import card1Img from "../../"
 import Heading from "../../components/atoms/headingText";
 import SmallHeading from "../../components/atoms/SmallHeading";
-import "./profile.css";             
+import "./profile.css";
 import SubHeading from "../../components/atoms/SubHeading";
 import CourseCard from "../../components/molecules/CourseCard";
 import ProfileCourseCard from "../../components/molecules/ProfileCourseCard";
-
+import SideNavBar from "../../components/molecules/SideNavBar";
 const cardArr = [1, 2, 4, 5, 6, 2, 4, 2];
 const menus = ["All courses", "My list", "Wishlist", "Career hunt"];
 const Profile = ({ username, price }) => {
   return (
     <div className="profileContainer">
+      <SideNavBar />
       <div className="profileHeaderSection">
         <Heading styles={{ color: "white" }}>My Learning</Heading>
       </div>
@@ -24,28 +25,15 @@ const Profile = ({ username, price }) => {
           );
         })}
       </div>
-      <ProfileCourseCard />
-      
-      
-      {/* <div className="profileMylearning">
-        <div className="profileCourse">
-          {cardArr.map((item, i) => {
-            return (
-              <CourseCard key={item} image={card1Img}>
-                <SmallHeading
-                  className="cardstrans"
-                  style={{ color: "white" }}
-                >
-                  Educative
-                </SmallHeading>
-                <SubHeading style={{ color: "white", textAlign: "left" }}>
-                  Grokking the Machine Learning Interview
-                </SubHeading>
-              </CourseCard>
-            );
-          })}
-        </div>
-      </div> */}
+      <div className="courseGrid">
+        <ProfileCourseCard completionPercentage={23} />
+        <ProfileCourseCard completionPercentage={53} />
+        <ProfileCourseCard completionPercentage={73} />
+        <ProfileCourseCard completionPercentage={83} />
+        <ProfileCourseCard completionPercentage={10} />
+        <ProfileCourseCard completionPercentage={10} />
+        <ProfileCourseCard completionPercentage={20} />
+      </div>
     </div>
   );
 };

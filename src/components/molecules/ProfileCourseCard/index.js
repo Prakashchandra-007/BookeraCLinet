@@ -1,33 +1,60 @@
-import React from "react";
+import React, { useState } from "react";
 import CustomButton from "../../atoms/CustomButton";
 import DropDownProfile from "../../atoms/DropDownProfile";
+import courseCover from "../../../asserts/images/element/card1Img.jpg";
 import "./profilecoursecard.css";
+import NormalText from "../../atoms/NormalText";
+import { BiDotsVerticalRounded } from "react-icons/bi";
 
-const ProfileCourseCard = ({ image, style, children }) => {
+const ProfileCourseCard = ({
+  image,
+  style,
+  children,
+  completionPercentage,
+}) => {
+  const [openDrop, setOpenDrop] = useState(false);
   return (
     <div className="profileCourseContainer">
-      {/* <DropDownProfile/> */}
-
-      <img
-        src={image}
-        style={{ height: "50%" }}
-        backgroundColor="white"
-        alt="course1img"
-        className="course1img"
-      />
+      {openDrop && <DropDownProfile />}
+      <div className="optionBtn">
+        <button
+          onClick={() => {
+            setOpenDrop((ps) => !ps);
+          }}
+        >
+          <BiDotsVerticalRounded fontSize={"2em"} color="black" />
+        </button>
+      </div>
+      <div className="ImgDiv">
+        <img
+          src={courseCover}
+          style={{ height: "20%" }}
+          backgroundColor="white"
+          alt="course1img"
+          className="course1img"
+        />
+      </div>
 
       <div className="profiletitleBlock" style={{ height: "40%" }}>
-        {children}
-        
         <div className="profilectaBlock">
-          <h1>Java Programming for Complete Beginners</h1>
-          <p>HTML</p>
+          <NormalText style={{ color: "#000000", fontWeight: "bold" }}>
+            Java Programming for Complete Beginners
+          </NormalText>
+          <NormalText style={{ color: "#000000", marginBottom: "2%" }}>
+            Finance Business
+          </NormalText>
+
           <div class="container">
-            <div class="skill html"></div>
+            <div
+              style={{ width: `${completionPercentage}%` }}
+              class="progressbarCourse"
+            ></div>
           </div>
-          <h1>80% Complete</h1>
+          <NormalText style={{ color: "#000000" }}>
+            {completionPercentage}% Complete
+          </NormalText>
+
           <div>
-            
             <div class="rate">
               <input type="radio" id="star5" name="rate" value="5" />
               <label for="star5" title="text">
@@ -49,12 +76,13 @@ const ProfileCourseCard = ({ image, style, children }) => {
               <label for="star1" title="text">
                 1 star
               </label>
-              <h1 className="rating">Leave a rating</h1>
+              <NormalText style={{ color: "#000000" }}>
+                Leave a rating
+              </NormalText>
             </div>
           </div>
         </div>
       </div>
-      {/* <h2>card</h2> */}
     </div>
   );
 };

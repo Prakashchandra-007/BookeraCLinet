@@ -35,7 +35,9 @@ function AllCourses() {
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
             <CustomButton
-              icon={<MdSearch style={{fontSize:"25" ,alignItems:"center"}} />}
+              icon={
+                <MdSearch style={{ fontSize: "25", alignItems: "center" }} />
+              }
               iconPosition={"left"}
               style={{ backgroundColor: "blue", padding: "1em" }}
             >
@@ -44,36 +46,47 @@ function AllCourses() {
           </div>
           <div className="stickyHeader">
             <CustomButton
-              icon={<MdLanguage style={{fontSize:"25" ,alignItems:"center"}} />}
+              icon={
+                <MdLanguage style={{ fontSize: "25", alignItems: "center" }} />
+              }
               iconPosition={"left"}
               style={{ fontSize: "1em" }}
-
             >
               Browse All
             </CustomButton>
             <CustomButton
-              icon={<MdStarBorder style={{fontSize:"25" ,alignItems:"center"}}/>}
+              icon={
+                <MdStarBorder
+                  style={{ fontSize: "25", alignItems: "center" }}
+                />
+              }
               iconPosition={"left"}
               style={tabStyle}
             >
               Our Picks
             </CustomButton>
             <CustomButton
-              icon={<BsStars style={{fontSize:"25" ,alignItems:"center"}}/>}
+              icon={
+                <BsStars style={{ fontSize: "25", alignItems: "center" }} />
+              }
               iconPosition={"left"}
               style={tabStyle}
             >
               New
             </CustomButton>
             <CustomButton
-              icon={<MdFlag style={{fontSize:"25" ,alignItems:"center"}}/>}
+              icon={<MdFlag style={{ fontSize: "25", alignItems: "center" }} />}
               iconPosition={"left"}
               style={tabStyle}
             >
               Early Access
             </CustomButton>
             <CustomButton
-              icon={<MdOutlineCreditCardOff style={{fontSize:"25" ,alignItems:"center"}}/>}
+              icon={
+                <MdOutlineCreditCardOff
+                  style={{ fontSize: "25", alignItems: "center" }}
+                />
+              }
               iconPosition={"left"}
               style={tabStyle}
             >
@@ -105,7 +118,7 @@ function AllCourses() {
             Data
           </CustomButton>
         </div>
-        <SideNavBar />
+        {/* <SideNavBar /> */}
         <div className="courseGridSection">
           {cardArr.map((item, i) => {
             return (
