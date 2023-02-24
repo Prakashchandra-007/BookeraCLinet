@@ -35,7 +35,7 @@ function AllCourses() {
           <div className="searchBar">
             <input type="text" placeholder="Search Course..." />
             <CustomButton
-              icon={<MdSearch />}
+              icon={<MdSearch style={{fontSize:"25" ,alignItems:"center"}} />}
               iconPosition={"left"}
               style={{ backgroundColor: "blue", padding: "1em" }}
             >
@@ -44,35 +44,36 @@ function AllCourses() {
           </div>
           <div className="stickyHeader">
             <CustomButton
-              icon={<MdLanguage />}
+              icon={<MdLanguage style={{fontSize:"25" ,alignItems:"center"}} />}
               iconPosition={"left"}
               style={{ fontSize: "1em" }}
+
             >
               Browse All
             </CustomButton>
             <CustomButton
-              icon={<MdStarBorder />}
+              icon={<MdStarBorder style={{fontSize:"25" ,alignItems:"center"}}/>}
               iconPosition={"left"}
               style={tabStyle}
             >
               Our Picks
             </CustomButton>
             <CustomButton
-              icon={<BsStars />}
+              icon={<BsStars style={{fontSize:"25" ,alignItems:"center"}}/>}
               iconPosition={"left"}
               style={tabStyle}
             >
               New
             </CustomButton>
             <CustomButton
-              icon={<MdFlag />}
+              icon={<MdFlag style={{fontSize:"25" ,alignItems:"center"}}/>}
               iconPosition={"left"}
               style={tabStyle}
             >
               Early Access
             </CustomButton>
             <CustomButton
-              icon={<MdOutlineCreditCardOff />}
+              icon={<MdOutlineCreditCardOff style={{fontSize:"25" ,alignItems:"center"}}/>}
               iconPosition={"left"}
               style={tabStyle}
             >
