@@ -16,6 +16,9 @@
   background-color: #1e1e27;
   /* height: 30vh; */
   display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  max-height: 350px;
   /* height: auto; */
   width: "100%";
   flex-wrap: wrap;
@@ -27,7 +30,7 @@
   width: 100%;
   flex-wrap: wrap;
   align-items: center;
-  height: 8vh;
+  height: 12gitvh;
   justify-content: flex-start;
   overflow: hidden;
 }
