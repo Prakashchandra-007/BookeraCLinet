@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { TbAlignRight , TbX} from "react-icons/tb";
 import { Link } from "react-router-dom";
-import Heading from "../headingText";
+import Heading from "../HeadingText";
 import "./humberg.css";
 
 function HumbergBtn() {

@@ -1,6 +1,6 @@
 import React from "react";
 import "./allcourses.css";
-import Heading from "../../atoms/headingText";
+import Heading from "../../atoms/HeadingText";
 import CustomButton from "../../atoms/CustomButton";
 // import { Star, Globe, Flag, CreditCard, Activity} from "react-feather";
 import { TbArrowNarrowRight } from "react-icons/tb";

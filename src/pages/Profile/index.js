@@ -1,13 +1,9 @@
 import React from "react";
 // import card1Img from "../../"
-import Heading from "../../components/atoms/headingText";
-import SmallHeading from "../../components/atoms/SmallHeading";
+import Heading from "../../components/atoms/HeadingText";
 import "./profile.css";
-import SubHeading from "../../components/atoms/SubHeading";
-import CourseCard from "../../components/molecules/CourseCard";
 import ProfileCourseCard from "../../components/molecules/ProfileCourseCard";
 import SideNavBar from "../../components/molecules/SideNavBar";
-const cardArr = [1, 2, 4, 5, 6, 2, 4, 2];
 const menus = ["All courses", "My list", "Wishlist", "Career hunt"];
 const Profile = ({ username, price }) => {
   return (
