@@ -1,12 +1,11 @@
 .loginContainer {
     height: 100%;
-    width: 100%;
+    width: 60%;
     display: flex;
-    margin: 15px 0 15px;
     border-radius: 10px;
     align-items: center;
     flex-direction:row;
-  /* background-color: rgb(10, 35, 57);   */
+    justify-content: center;
 }
 
 .loginLeft {
@@ -14,8 +13,8 @@
   color: rgb(244, 240, 240);
   width: 40%;
   height: 100%;
-  border-radius: 10px;
-  padding: 5% 5% 10%;
+  border-radius: 10px 0px 0px 10px;
+  padding: 10% 5% 5%;
   margin: 10% 0% 10%;
   align-items: center;
 }
@@ -24,15 +23,14 @@
     border-top: 1px solid rgb(0, 35, 51);
     height: 1px;
     margin: 24px 0;
-
 }
 
 .loginRight {
   background-color: aqua;
   width: 60%;
   height: 100%;
-  padding: 5%;
-  border-radius: 10px;
-  padding: 10% 15% 0%;
+  border-radius: 0px 10px 10px 0px;
+  padding: 30.2% 5% 35.2%;
+  margin: 10% 0% 10%;
   align-items: center;
 }
