@@ -4,6 +4,7 @@ import Heading from "../../components/atoms/HeadingText";
 import CustomButton from "../../components/atoms/CustomButton";
 import { Progress } from "@chakra-ui/react";
 import NormalText from "../../components/atoms/NormalText";
+import { MdOutlineFacebook  } from "react-icons/md";
 
 const Login = () => {
   return (
@@ -18,25 +19,32 @@ const Login = () => {
       </div>
       <div className="loginRight">
         <CustomButton
-        // style={{
-        //   color: "#ffffff",
-        //   display: "flex",
-        //   justifyContent: "center",
-        //   alignItems: "center",
-        // }}
+          style={{
+            color: "black",
+            backgroundColor: "white",
+            border: "1px solid black",
+            borderRadius: "5px",
+          }}
         >
           Continue with FaceBook
         </CustomButton>
-        <CustomButton>Continue with Google</CustomButton>
-        <CustomButton>Continue with Apple</CustomButton>
-        <div className="formSeprator">
-          <p>or</p>
-          <CustomButton>Sign Up Using Email</CustomButton>
-          <NormalText>
-            Already a member?<CustomButton>Sign In</CustomButton>
-          </NormalText>
-          <p>or</p>
-        </div>
+        <CustomButton icon={{MdOutlineFacebook}} style={{
+            color: "black",
+            backgroundColor: "white",
+            border: "1px solid black",
+            borderRadius: "5px",
+          }}>Continue with Google</CustomButton>
+        <CustomButton style={{
+            color: "black",
+            backgroundColor: "white",
+            border: "1px solid black",
+            borderRadius: "5px",
+          }}>Continue with Apple</CustomButton>
+        <p>or</p>
+        <CustomButton>Sign Up Using Email</CustomButton>
+        <NormalText>
+          Already a member?<CustomButton>Sign In</CustomButton>
+        </NormalText>
       </div>
     </div>
   );
