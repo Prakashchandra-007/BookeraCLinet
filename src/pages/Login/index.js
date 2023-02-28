@@ -15,16 +15,9 @@ const Login = () => {
         <div className="signupForm">
 
           <div className="loginLeft">
-            <Heading style={{ fontSize: "2em" }}>
-              Join Skillshare for Free
+            <Heading style={{ fontSize: "2em"}}>
+              Join SkillShare for Free
             </Heading>
-            <br />
-            <Progress
-              size="md"
-              colorScheme="green"
-              isIndeterminate
-              style={{ fontSize: "0.5rem", paddingBottom: "0.1em" }}
-            />
             <br />
             <NormalText style={{ fontSize: "1rem" }}>
               Explore your creativity with thousands of inspiring classes in
