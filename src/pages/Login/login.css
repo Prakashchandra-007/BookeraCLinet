@@ -1,4 +1,4 @@
-.loginContainer {
+.loginContainer .signupForm {
   height: 70vh;
   width: 50vw;
   max-width: 720px;
@@ -16,6 +16,23 @@
   transform: translate(-50%, -50%);
   box-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
+
+.loginContainer .loginForm{
+  display: none;
+}
+
+#check:checked ~ .signupForm {
+  display: block;
+}
+
+#check:checked ~ .loginForm {
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
 
 .loginLeft {
   background-color: #002333;
@@ -51,7 +68,7 @@
 }
 
 .signIn{
-  marginLeft: 0.2em;
+  margin-left: 0.2em;
   font-weight: 700;
   color: blue;
   text-decoration: none;
@@ -66,7 +83,7 @@
   cursor: pointer;
   background-color:#004c70 ;
 }
-  
+
 @media screen and (max-width: 385px) {
   .loginContainer {
     position: relative;
