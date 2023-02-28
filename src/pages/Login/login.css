@@ -1,19 +1,27 @@
 .loginContainer {
   height: 70vh;
   width: 50vw;
+  max-width: 720px;
+  min-width: 320px;
   display: flex;
   margin: 3em auto;
   border-radius: 10px;
   align-items: center;
   flex-direction: row;
   z-index: 999;
-  /* background-color: rgb(10, 35, 57);   */
+  /* background-color: rgb(10, 35, 57); */
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
 .loginLeft {
   background-color: #002333;
   color: rgb(244, 240, 240);
-  width: 45%;
+  /* width: 45%; */
+  flex-basis: 45%;
   min-width: 200px;
   height: 100%;
   border-top-left-radius: 10px;
@@ -30,7 +38,8 @@
 
 .loginRight {
   background-color: rgb(255, 255, 255);
-  width: 75%;
+  /* width: 75%; */
+  flex-basis: 75%;
   height: 100%;
   padding: 5% 5% 5%;
   border-top-right-radius: 10px;
@@ -40,11 +49,41 @@
   align-items: center;
   justify-self: center;
 }
+
+.signIn{
+  marginLeft: 0.2em;
+  font-weight: 700;
+  color: blue;
+  text-decoration: none;
+}
+
+.signIn:hover {
+  text-decoration: underline;
+}
+
+
+.signUp:hover{
+  cursor: pointer;
+  background-color:#004c70 ;
+}
+  
 @media screen and (max-width: 385px) {
+  .loginContainer {
+    position: relative;
+  }
+
   .loginLeft {
     display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
   .loginRight {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    justify-content: center;
     border-radius: 10px;
     width: 100vw;
   }

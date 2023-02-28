@@ -7,7 +7,6 @@ import NormalText from "../../components/atoms/NormalText";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple, FaFacebook } from "react-icons/fa";
 import Modal from "../../components/atoms/Modal";
-// import headingText from '../../'
 const Login = () => {
   return (
     <Modal>
@@ -53,6 +52,7 @@ const Login = () => {
               justifyContent: "center",
               alignItems: "center",
               margin: "1em 0",
+              boxShadow: " 0 1px 0px rgba(0,0,0,0.2)",
             }}
           >
             Continue with FaceBook
@@ -79,6 +79,7 @@ const Login = () => {
               justifyContent: "center",
               alignItems: "center",
               margin: "1em 0",
+              boxShadow: " 0 1px 0px rgba(0,0,0,0.2)",
             }}
           >
             Continue with Google
@@ -105,6 +106,7 @@ const Login = () => {
               justifyContent: "center",
               alignItems: "center",
               margin: "1em 0",
+              boxShadow: " 0 1px 0px rgba(0,0,0,0.2)",
             }}
           >
             Continue with Apple
@@ -123,19 +125,16 @@ const Login = () => {
               margin: "1em 0",
             }}
           >
-            Sign Up Using Email
+          <a className="signup" href="#">
+          Sign Up Using Email
+          </a>
           </CustomButton>
           <CustomButton style={{ color: "black", backgroundColor: "white" }}>
             Already a member?
-            <span
-              style={{
-                marginLeft: "0.2em",
-                color: "blue",
-                textDecoration: "underline",
-              }}
+            <a className="signIn" href="#" 
             >
-              Sign up
-            </span>{" "}
+              Sign in
+            </a>
           </CustomButton>
         </div>
       </div>
