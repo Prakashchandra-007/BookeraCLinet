@@ -15,19 +15,6 @@ const Login = () => {
       <div className="loginContainer">
         <input type="checkbox" id="check" />
         <div className="signupForm">
-<<<<<<< HEAD
-
-          <div className="loginLeft">
-            <Heading style={{ fontSize: "2em"}}>
-              Join SkillShare for Free
-            </Heading>
-            <br />
-            <NormalText style={{ fontSize: "1rem" }}>
-              Explore your creativity with thousands of inspiring classes in
-              design, illustration, photography, and more.
-            </NormalText>
-          </div>
-=======
           {screenState === "signup" && (
             <div className="loginLeft">
               <Heading style={{ fontSize: "2em" }}>
@@ -47,7 +34,6 @@ const Login = () => {
               </NormalText>
             </div>
           )}
->>>>>>> 8258bf7 (api services WIP)
           <div className="loginRight">
             {screenState === "signup" && (
               <>
