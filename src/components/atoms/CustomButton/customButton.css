@@ -2,14 +2,14 @@
   color: #fff;
   padding: 0.5em 0.5em 0.5em;
   background-color: #6972f0;
-  display:flex
+  display: flex;
 }
 .customButton:hover {
   color: #fff;
   background-color: #7d84ee;
 }
 
-@media screen and (max-width:1280px) {
+@media screen and (max-width: 1280px) {
   .customButton {
     font-size: 0.8em;
     max-width: 10em;
@@ -18,4 +18,3 @@
     min-height: 2.5em;
   }
 }
- 

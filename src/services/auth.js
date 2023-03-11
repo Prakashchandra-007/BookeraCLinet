@@ -5,6 +5,15 @@ import {
   deleteService,
 } from "../https/api";
 // all auth api call
-const getAllBooks = async () => {
-  // getService();
+const userRegistration = async (userData) => {
+  const response = await postService("/addNewUserData");
+  return response;
+};
+const userLoginValidate = (email, password) => {};
+const checkUserRole = (email) => {};
+
+export default {
+  userRegistration,
+  checkUserRole,
+  userLoginValidate,
 };
